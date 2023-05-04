@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.menu li {
+    float: left;
+}
+
+.menu li a {
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    background-color: #0d47a1;
+    color: #ffffff;
+}
+
+#preview {
+    position: absolute;
+    border: 1px solid #0d47a1;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+}
