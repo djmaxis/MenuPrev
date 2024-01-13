@@ -26,26 +26,53 @@
             transform: translateX(-50%); /* Ajuste fino para el centrado horizontal */
             width: 70%; /* Ancho reducido al 70% del ancho de la ventana */
             max-width: 700px; /* Ancho máximo más pequeño */
-            border-radius: 15px 15px 15px 15px; /* Bordes redondeados en la parte inferior */
+            border-radius: 15px; /* Bordes redondeados */
+            padding: 20px; /* Padding para un mejor aspecto */
+        }
+
+        @media (max-width: 768px) {
+            .content-wrapper {
+                top: 20px; /* Menos espacio en la parte superior para móviles */
+                width: 85%; /* Ancho mayor para pantallas más pequeñas */
+            }
+        }
+
+        @media (max-width: 640px) {
+            .content-wrapper {
+                width: 95%; /* Ancho aún mayor para pantallas más pequeñas */
+            }
+        }
+
+        /* Estilos adicionales para los botones/links */
+        .button-link {
+            padding: 4px 8px;
+            border: 1px solid transparent;
+            border-radius: 8px;
+            text-decoration: none;
+            color: white;
+            background-color: #4a5568; /* Tailwind gray-700 */
+            margin-right: 10px; /* Espacio entre botones */
+        }
+
+        .button-link:hover {
+            background-color: #2d3748; /* Tailwind gray-800 */
         }
     </style>
 </head>
 
 <body>
-    <div class="min-h-screen flex flex-col">
-        <!-- Contenedor de contenido con fondo semi-transparente -->
-        <div class="content-wrapper p-8 shadow-lg">
-            <!-- Pasos o categorías de adopción -->
-            <div class="flex flex-wrap justify-center gap-4 text-black-800">
-<a href="" class="px-4 py-2 border border-white-300 rounded-full bg-gray-500 text-white hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-opacity-50 mr-4">INICIO</a>
-<a href="" class="px-4 py-2 border border-white rounded-full bg-gray-500 text-white hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-opacity-50 mr-4">NOSTROS</a>
-<a href="" class="px-4 py-2 border border-white rounded-full bg-gray-500 text-white hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-opacity-50 mr-4">SERVICIOS</a>
-<a href="" class="px-4 py-2 border border-white rounded-full bg-gray-500 text-white hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-opacity-50 mr-4">CONTACTO</a>
-
-                
+    <div class="min-h-screen flex flex-col items-center justify-center">
+        <div class="content-wrapper shadow-lg">
+            <div class="text-center mb-4">
+                <h1 class="text-2xl font-semibold">Bienvenido a Cholucan Dog Walker</h1>
+            </div>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#" class="button-link">INICIO</a>
+                <a href="#" class="button-link">NOSOTROS</a>
+                <a href="#" class="button-link">SERVICIOS</a>
+                <a href="#" class="button-link">CONTACTO</a>
             </div>
         </div>
-        <!-- El resto de la página continúa aquí -->
     </div>
 </body>
 
